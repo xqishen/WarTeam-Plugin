@@ -1,0 +1,41 @@
+name: WarTeamPlugin
+main: com.dtjiang.WarTeam.WarTeamPlugin
+version: 1.0
+api-version: 1.20
+commands:
+  team:
+    description: 主要命令用于管理队伍
+    usage: /team <subcommand> [arguments]
+    aliases: [t, teamcommand]
+
+  team level:
+    description: 显示玩家的等级
+    usage: /team level
+
+  team create:
+    description: 创建一个新的队伍
+    usage: /team create <teamName>
+
+  team join:
+    description: 向一个队伍发送加入申请
+    usage: /team join <teamName>
+
+  team leave:
+    description: 离开当前的队伍
+    usage: /team leave <teamName>
+
+  team info:
+    description: 显示队伍的详细信息
+    usage: /team info <teamName>
+
+  team requests:
+    description: 查看队伍的加入申请
+    usage: /team requests <teamName>
+
+  team accept:
+    description: 接受一个玩家的加入申请
+    usage: /team accept <teamName> <playerName>
+
+  team reject:
+    description: 拒绝一个玩家的加入申请
+    usage: /team reject <teamName> <playerName>
